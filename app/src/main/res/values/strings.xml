@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GatosApp</string>
+    <string-array name="Tipo_cuenta">
+        <item>Tarjeta de Crédito</item>
+        <item>Ahorro</item>
+        <item>Efectivo</item>
+    </string-array>
+</resources>

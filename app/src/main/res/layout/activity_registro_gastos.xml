@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroGastos"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Ingresos/Egresos"
+        android:textSize="16dp"
+        android:paddingBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/monto"
+        android:layout_below="@+id/view"
+        android:layout_width="match_parent"
+        android:paddingBottom="16dp"
+        android:layout_height="wrap_content"
+        android:hint="Monto"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:paddingBottom="16dp"
+        android:layout_below="@+id/monto"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_ingresos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:text="Ingresos"/>
+        <RadioButton
+            android:id="@+id/radio_egresos"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Egresos "/>
+
+    </RadioGroup>
+
+
+    <Spinner
+        android:id="@+id/spinner_tipo"
+        android:layout_below="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Tipo_cuenta"/>
+
+    <Button
+        android:id="@+id/button_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_below="@+id/spinner_tipo"
+        android:text="Registrar"/>
+
+</RelativeLayout>
